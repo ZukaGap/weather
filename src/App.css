@@ -1,5 +1,5 @@
 .tbi,.kut,.bat {
-    width: 60%;
+    width: 64%;
     height: 270px;
     margin: auto;
     overflow: scroll; 
@@ -21,7 +21,8 @@ h2 {
     font-size: 35px;
     margin: 5vh 0 0 0;
     letter-spacing: 15px;
-    font-family: 'Alfa Slab One', cursive;
+    color: #025159;
+    text-shadow: 0 0 10px #03A696, 0 0 8px #03A696;
 }
 
 ::-webkit-scrollbar {
