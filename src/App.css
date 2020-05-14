@@ -1,38 +1,45 @@
-.App {
-  text-align: center;
+.tbi,.kut,.bat {
+    width: 60%;
+    height: 270px;
+    margin: auto;
+    overflow: scroll; 
+    scrollbar-width: thin;
+    overflow-y: hidden;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.tbi > .ticket:first-child,
+.kut > .ticket:first-child,
+.bat > .ticket:first-child {
+    background-color: #11BFBF;
+    font-weight: bold;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h2 {
+    text-align: center;
+    font-size: 35px;
+    margin: 5vh 0 0 0;
+    letter-spacing: 15px;
+    font-family: 'Alfa Slab One', cursive;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+::-webkit-scrollbar {
+    width: 8px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2); 
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media only screen and (max-width: 600px) {
+    .tbi,.kut,.bat {
+        width: 100%;
+    }
 }
