@@ -16,7 +16,7 @@ function Day(props){
             </p>
             <p className = "weather_info">{props.info.weather[0].description}</p>
         </div>
-        <p>Feels: {props.info.feels_like.day}°</p>
+        <p>Feels: {parseInt(props.info.feels_like.day,10)}°</p>
         <p>Wind speed: {props.info.wind_speed}</p>
         <p>Pressure: {props.info.pressure}kPa</p>
     </div>
