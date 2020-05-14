@@ -8,9 +8,10 @@ const App = () => {
   const [batumi, setBatumi] = useState([]);
 
   const getTodos = async () => {
-    const url_tb = "https://api.openweathermap.org/data/2.5/onecall?lat=41.6941&lon=44.8337&units=metric&exclude=current&appid=f527564fb31cc061c5de78a2e03c9b07";
-    const url_kt = "https://api.openweathermap.org/data/2.5/onecall?lat=42.2496&lon=42.6997&units=metric&exclude=current&appid=f527564fb31cc061c5de78a2e03c9b07";
-    const url_bt = "https://api.openweathermap.org/data/2.5/onecall?lat=41.6416&lon=41.6359&units=metric&exclude=current&appid=f527564fb31cc061c5de78a2e03c9b07";
+    const KEY = "f527564fb31cc061c5de78a2e03c9b07";
+    const url_tb = `https://api.openweathermap.org/data/2.5/onecall?lat=41.6941&lon=44.8337&units=metric&exclude=current&appid=${KEY}`;
+    const url_kt = `https://api.openweathermap.org/data/2.5/onecall?lat=42.2496&lon=42.6997&units=metric&exclude=current&appid=${KEY}`;
+    const url_bt = `https://api.openweathermap.org/data/2.5/onecall?lat=41.6416&lon=41.6359&units=metric&exclude=current&appid=${KEY}`;
 
     const response = await fetch(url_tb);
     const data = await response.json();
