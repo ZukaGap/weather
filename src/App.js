@@ -32,19 +32,19 @@ const App = () => {
     <div>      
       <h2>Tbilisi</h2> 
       <div className="tbi">
-        {tbilisi.slice(1).map(todo => (
+        {tbilisi.map(todo => (
           <Day info={todo} key={todo.dt} />
         ))}
       </div>
       <h2>Kutaisi</h2> 
       <div className="kut">
-        {kutaisi.slice(1).map(todo => (
+        {kutaisi.map(todo => (
           <Day info={todo} key={todo.dt} />
         ))}
       </div> 
       <h2>Batumi</h2> 
       <div className="bat">
-        {batumi.slice(1).map(todo => (
+        {batumi.map(todo => (
           <Day info={todo} key={todo.dt} />
         ))}
       </div> 
