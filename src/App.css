@@ -1,6 +1,6 @@
 .tbi,.kut,.bat {
     width: 64%;
-    height: 270px;
+    height: auto;
     margin: auto;
     overflow: scroll; 
     scrollbar-width: thin;
