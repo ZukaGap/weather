@@ -8,4 +8,4 @@ In the project directory, you can run:
 
 ### `npm run build`
 
-`https://gweather.netlify.app/`
+`gweather.netlify.app`
